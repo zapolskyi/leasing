@@ -25,6 +25,7 @@
   color: #FFFFFF;
   text-decoration: none;
   display: inline-block;
+  text-transform: uppercase;
   margin-right: 35px;
   -webkit-transition: all 0.4s linear;
   transition: all 0.4s linear;
@@ -34,6 +35,17 @@
 }
 .header__nav-link:hover {
   text-shadow: 0px 4px 4px rgb(0, 0, 0);
+}
+
+.shadow {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background-color: #151515;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
 }
 
 .navToggle {
@@ -153,6 +165,9 @@
 @media (max-width: 620px) {
   .home__title {
     font-size: 50px;
+  }
+  .home {
+    margin-top: 285px;
   }
 }
 .swiper-slide {

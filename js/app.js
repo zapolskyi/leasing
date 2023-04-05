@@ -6,6 +6,22 @@ navToggle.addEventListener('click', () => {
 })
 
 
+let header = document.querySelector ('header');
+
+window.addEventListener('scroll', function() {
+    let showMeScroll = scrollY;
+
+    if (showMeScroll > 765) {
+        header.classList.add ('shadow');
+    } else {
+        header.classList.remove ('.shadow')
+    }
+
+    console.log (showMeScroll);
+})
+
+console.log (header);
+
 const swiper = new Swiper(".swiper", {
     effect: "fade",
 
@@ -13,7 +29,7 @@ const swiper = new Swiper(".swiper", {
         el: ".swiper-pagination",
     },
     autoplay: {
-        delay: 6000,
+        delay: 2000,
         disableOnInteraction: false,
         
     },
