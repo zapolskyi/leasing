@@ -27,7 +27,7 @@ window.addEventListener('scroll', function() {
     if (showMeScroll > 765) {
         header.classList.add ('shadow');
     } else {
-        header.classList.remove ('.shadow')
+        header.classList.remove ('shadow')
     }
 
     console.log (showMeScroll);
