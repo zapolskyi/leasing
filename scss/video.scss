@@ -1,0 +1,39 @@
+.video{
+    padding: 150px 0;
+
+    &__title{
+        margin-bottom: 30px;
+        font-size: 48px;
+        font-weight: 700;
+        color: $black;
+
+        text-align: center;
+    }
+
+    &__suptitle{
+        font-size: 24px;
+        font-weight: 700;
+        color: $black;
+        text-align: center;
+
+        margin-bottom: 50px;
+    }
+
+    &__item{
+        display: block;
+        max-width: 100%;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 620px) {
+    .video__title{
+        font-size: 38px;
+    }
+}
+
+@media (max-width: 520px) {
+    .video__title{
+        font-size: 33px;
+    }
+}
